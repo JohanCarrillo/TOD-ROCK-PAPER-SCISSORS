@@ -21,8 +21,11 @@ function Standarize(word) {
     wordarray[i] = wordarray[i].toLowerCase();
   }
   wordarray[0] = wordarray[0].toUpperCase();  // capitalize first char
+  word = wordarray.join('');  // convert to string
+  /*
   word = wordarray.toString();  // converts to string again
   word = word.replace(/,/g, '');  // deletes semi-colons
+  */
   return(word);
 }
 
@@ -87,18 +90,19 @@ function Game(){
     if (winner === 'computer') {computer_count++;
     } else if (winner === 'player') {player_count++;}
     
-      if (computer_count === 3) {
-        console.log('3/5! Computer wins! Better luck next time!');
-        return;
-      }
-      if (player_count === 3) {
-        console.log('3/5! You win! What a boss!');
-        return;
-      }
-      if (player_count === 2 && computer_count === 2) console.log('Draw! Last one standing wins!');
+    if (computer_count === 3) {
+      console.log('3/5! Computer wins! Better luck next time!');
+      return;
+    }
+    if (player_count === 3) {
+      console.log('3/5! You win! What a boss!');
+      return;
+    }
+    if (player_count === 2 && computer_count === 2) console.log('Draw! Last one standing wins!');
   }
   console.log('player score: ' + player_count);
   console.log('computer score: ' + computer_count);
+  
   if (player_count > computer_count) {
     console.log('You win! What a boss!');
   } else if (computer_count > player_count) {
