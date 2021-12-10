@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  color: #FF0083;
+  padding: 2% 10%;
+  font-family: monospace;
+  font-size: large;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+strong {
+  color: #3EFF00;
+}
+
+img {
+  border: white solid 3px;
+  max-height: 50vh;
+  width: auto;
+}
+
+.trigger-game {
+  text-align: center;
+}
+img#trigger-game {
+  max-height: 30vh;
+  width: auto;
+}
+
+#container1, #container2, #container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.introduction, .rules {
+  padding: 3% 5%;
+  border: solid 3px white;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  align-self: center;
+  padding-bottom: 12px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#container2, #container3 {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+button img {
+  border: black solid 3px;
+  flex: 0 1 auto;
+  max-height: 30vh;
+  width: auto;
+}
+
+
+
+.message {
+  size: 32px;
+}
+
+#leader-board{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.score{
+  padding: 2%;
+  width: auto;
+  flex: 1 0 auto;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}

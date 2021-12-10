@@ -5,12 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROCK-PAPER-SCISSORS</title>
-
-  <script type="text/javascript" src="script.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-<h1>ROCK-PAPER-SCISSORS</h1>
-<div id="container"></div>
+  <h1> Cats vs Hoomans - Decisive Battle </h1>
+  <div id="container1">
+    
+    <div class="introduction"> 
+      Welcome to you, chief of hoomans! I am pleased to see 
+      you here, in the last fight between us, the greatest and benevolent cat 
+      race and you, silly creatures of the hooman race. I am the cat leader and today
+      we'll be fighting in a tournament of what you, pitiful beings, call Rock-Paper-Scissors but
+      since we, cats, as a superior life form lack of thumbs, the rules will be 
+      a little different.
+    </div>
+    <img src="img/boss-cat.jpg" alt="cat-boss">
+    <div class="rules">
+      <div class="subtitle"> <strong>The Rules</strong> </div>
+      <div class="content">
+        The rules of the fight are very simple so you, naive creature can 
+        understand them. The equivalent of Rock is a Cat Punch, the equivalent of
+        Paper is a Cat Slap and the equivalent of Scissors is a Cat Scratch, so as
+        the same way Rock beats Scissors, Scissors beats Paper and Paper beats
+        Rock, the rules are:
+        <ul>
+          <li> <strong>Cat Punch beats Cat Scratch</strong> </li>
+          <li> <strong>Cat Scratch beats Cat Slap</strong> </li>
+          <li> <strong>Cat Slap beats Cat Punch</strong> </li>
+        </ul>
+        We'll be playing and <strong>the first one to get 3 victories
+        wins</strong>. If we, cats, win, your pathetic race will be comdemned to give us all
+        your croquettes. On the other hand, in the remote case that you win, I will 
+        allow you to rub my back.
+      </div>
+    </div>
+    <div class="trigger-game"> 
+      If you're ready to fight click the cat bellow
+      <br> <br>
+      <img id="trigger-game" src="https://c.tenor.com/O6nMWd3Zv5cAAAAC/cat-punch.gif" alt="cat-boxer">
+    </div>
+  </div>
 
+  <div id="container2">
+    <div>
+      <div class="subtitle"> <strong>Remember the rules</strong> </div>
+      <ul>
+        <li> <strong>Cat Punch beats Cat Scratch</strong> </li>
+        <li> <strong>Cat Scratch beats Cat Slap</strong> </li>
+        <li> <strong>Cat Slap beats Cat Punch</strong> </li>
+      </ul>
+    </div>
+    <div id="leader-board">
+      <div class="score">Hoomans Score: <span class="hooman-score">0</span></div>
+      <div class="score">Cats Score: <span class="cat-score">0</span></div>
+    </div>
+    <div class="subtitle"> Choose your weapon! Mew! </div>
+    <div class="buttons">
+      <button id="Rock"> <img src="img/punch.png" alt="cat-punch"> <h3> Cat-Punch</h3></button>
+      <button id="Paper"><img src="img/slap.png" alt="cat-slap"> <h3>Cat-Slap</h3> </button>
+      <button id="Scissors"> <img src="img/scratch.png" alt="cat-scratch"> <h3>Cat-Scratch</h3></button>
+    </div>
+  
+  </div>
+  <div id="container3">
+    <h1> The winners are <strong class="winner">The </strong></h1>
+  </div>
 </body>
 </html>
